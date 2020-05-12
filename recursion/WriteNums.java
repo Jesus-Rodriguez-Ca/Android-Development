@@ -23,9 +23,9 @@ package recursion;
 
 public class WriteNums {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {		// Main method to call the method "writeNums"
 		//writeNums(0);
-		System.out.println();
+		System.out.println();				
 		writeNums(1);
 		System.out.println();
 		writeNums(5);
@@ -34,15 +34,17 @@ public class WriteNums {
 		System.out.println();
 
 	}
-	public static void writeNums(int n) {
-		if (n < 1) {
+	
+	
+	public static void writeNums(int n) {		// Method writeNums takes an integer as parameter	
+		if (n < 1) {				// throw an IllegalArgumentException if "n" is less than 1
 			throw new IllegalArgumentException("Invalid number");
 		}
-		else if (n == 1){
+		else if (n == 1){			// Base case to stop the recursion when "n" is igual 1
 			System.out.print(1);
 		}
-		else {
-		  writeNums(n - 1);
+		else {					// Recursive base, it will rest 1 to "n" until it reach 1 an prints it
+		  writeNums(n - 1);			// then it'll comeback to close the next iteration printing ", " + 2 ans so on. 	
 		  System.out.print(  ", " + n);
 		  
 		}
