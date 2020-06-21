@@ -54,20 +54,8 @@ public class Main {
 			
 		}while(option!= 2);
 	}
-
-	public int countEmpty() {
-		IntTreeNode overallRoot = null;
-		return countEmpty(overallRoot);
-	}
-
-	public int countEmpty(IntTreeNode root) {
-	    if (root == null) {
-	        return 1;
-	    } else {
-	        return countEmpty(root.left) + countEmpty(root.right);
-	    }
-	}
-	}
+	
+}
 	
 	
 
