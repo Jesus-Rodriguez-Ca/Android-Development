@@ -11,7 +11,7 @@
 
 package linked;
 
-public class List {
+public class TheList {
 	
 	private static ListNode front;
 
